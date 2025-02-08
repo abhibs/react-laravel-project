@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
+import { Container } from 'react-bootstrap'
 
-export default class TopBanner extends Component {
+class TopBanner extends Component {
   render() {
     return (
-      <div>TopBanner</div>
+        <>
+            <Container>
+                                
+            </Container>
+        </>
     )
   }
 }
+
+
+export default TopBanner
