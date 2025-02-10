@@ -9,17 +9,17 @@ class TopBanner extends Component {
     return (
         <>
             <Container fluid={true} className="topFixedBanner">
-                <div className="topBannerOverlay">
-                    <Container className="topContent">
+                {/* <div className="topBannerOverlay"> */}
+                    {/* <Container fluid={true} className="topContent"> */}
                         <Row>
-                            <Col className="text-center">
+                            <Col className="text-center topContent">
                                 <h1 className="topTitle">Abhiram B S</h1>
                                 <h4 className="topSubTitle">Learn Profesionally</h4>
                                 <Button variant="primary">Learn More</Button>
                             </Col>
                         </Row>
-                    </Container>
-                </div>
+                    {/* </Container> */}
+                {/* </div> */}
             </Container>
         </>
     )
