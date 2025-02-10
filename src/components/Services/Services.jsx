@@ -12,17 +12,17 @@ class Services extends Component {
                 <Row>
                     <Col lg={4} md={6} sm={12}>
                         <div>
-                            <img src={ecommerceIcon} alt="" />
+                            <img className="ecommerceIcon" src={ecommerceIcon} alt="" />
                         </div>
                     </Col>
                     <Col lg={4} md={6} sm={12}>
                         <div>
-                            <img src={designIcon} alt="" />
+                            <img className="designIcon" src={designIcon} alt="" />
                         </div>
                     </Col>
                     <Col lg={4} md={6} sm={12}>
                         <div>
-                            <img src={webIcon} alt="" />
+                            <img className="webIcon" src={webIcon} alt="" />
                         </div>
                     </Col>
                 </Row>
