@@ -11,6 +11,7 @@ class TopNavigation extends Component {
       navBarLogo: [whiteLogo],
       navBarLogo: [whiteLogo],
       navBarBack: "navBackground",
+      navBarItem: "navItem",
     };
   }
   onScroll = () => {
@@ -19,12 +20,14 @@ class TopNavigation extends Component {
       this.setState({
         navBarLogo: [blackLogo],
         navBarBack: "navBackgroundScroll",
+        navBarItem: "navItemScroll",
       });
     } else if (window.scrollY < 100) {
       // this.setState({ navBarTitle: "navTitle" });
       this.setState({
         navBarLogo: [whiteLogo],
         navBarBack: "navBackground",
+        navBarItem: "navItem",
       });
     }
   };
@@ -49,12 +52,24 @@ class TopNavigation extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
-              <Nav.Link href="#deets">HOME</Nav.Link>
-              <Nav.Link href="#deets">ABOUT</Nav.Link>
-              <Nav.Link href="#deets">SERVICE</Nav.Link>
-              <Nav.Link href="#deets">COURSES</Nav.Link>
-              <Nav.Link href="#deets">PORTFOLIO</Nav.Link>
-              <Nav.Link href="#deets">CONTACT US</Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                HOME
+              </Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                ABOUT
+              </Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                SERVICE
+              </Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                COURSES
+              </Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                PORTFOLIO
+              </Nav.Link>
+              <Nav.Link className={this.state.navBarItem} href="#deets">
+                CONTACT US
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
