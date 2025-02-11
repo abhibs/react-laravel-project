@@ -3,8 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import designIcon from "../../assets/images/design.png";
 import ecommerceIcon from "../../assets/images/ecommerce.png";
 import webIcon from "../../assets/images/web.png";
-import "../../assets/css/custom.css";
-import "../../assets/css/bootstrap.min.css";
 
 class Services extends Component {
   render() {
