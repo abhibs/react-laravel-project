@@ -1,3 +1,5 @@
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
@@ -30,10 +32,34 @@ class Summury extends Component {
                     What I Have Achieved
                   </Card.Title>
                   <Card.Text>
-                    <p className="cardSubTitle">Requirment Gathering</p>
-                    <p className="cardSubTitle">System Analysis</p>
-                    <p className="cardSubTitle">Coding Testing </p>
-                    <p className="cardSubTitle">Implementation </p>
+                    <p className="cardSubTitle">
+                      <FontAwesomeIcon
+                        className="iconBullent"
+                        icon={faCheckSquare}
+                      />{" "}
+                      Requirment Gathering
+                    </p>
+                    <p className="cardSubTitle">
+                      <FontAwesomeIcon
+                        className="iconBullent"
+                        icon={faCheckSquare}
+                      />{" "}
+                      System Analysis
+                    </p>
+                    <p className="cardSubTitle">
+                      <FontAwesomeIcon
+                        className="iconBullent"
+                        icon={faCheckSquare}
+                      />{" "}
+                      Coding Testing
+                    </p>
+                    <p className="cardSubTitle">
+                      <FontAwesomeIcon
+                        className="iconBullent"
+                        icon={faCheckSquare}
+                      />{" "}
+                      Implementation
+                    </p>
                   </Card.Text>
                 </Card.Body>
               </Card>
