@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Button, Row } from "react-bootstrap";
+import projectOne from "../../assets/images/project1.avif";
+import projectTwo from "../../assets/images/project2.avif";
+import projectThree from "../../assets/images/project3.avif";
 
 class RecentProject extends Component {
   render() {
@@ -8,13 +11,43 @@ class RecentProject extends Component {
         <Container>
           <Row>
             <Col lg={4} md={6} sm={12}>
-              <h1>One</h1>
+              <Card>
+                <Card.Img variant="top" src={projectOne} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
             </Col>
             <Col lg={4} md={6} sm={12}>
-              <h1>Two</h1>
+              <Card>
+                <Card.Img variant="top" src={projectTwo} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
             </Col>
             <Col lg={4} md={6} sm={12}>
-              <h1>Three</h1>
+              <Card>
+                <Card.Img variant="top" src={projectThree} />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
