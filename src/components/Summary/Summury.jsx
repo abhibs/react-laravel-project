@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 class Summury extends Component {
   render() {
@@ -24,7 +24,19 @@ class Summury extends Component {
               </Row>
             </Col>
             <Col lg={4} md={6} sm={12}>
-              <h1>Four</h1>
+              <Card className="workCard">
+                <Card.Body>
+                  <Card.Title className="cardTitle">
+                    What I Have Achieved
+                  </Card.Title>
+                  <Card.Text>
+                    <p className="cardSubTitle">Requirment Gathering</p>
+                    <p className="cardSubTitle">System Analysis</p>
+                    <p className="cardSubTitle">Coding Testing </p>
+                    <p className="cardSubTitle">Implementation </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
