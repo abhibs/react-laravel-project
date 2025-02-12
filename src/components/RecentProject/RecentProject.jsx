@@ -8,14 +8,16 @@ class RecentProject extends Component {
   render() {
     return (
       <>
-        <Container>
+        <Container className="text-center">
+          <h1 className="serviceMainTitle">MY COURSES</h1>
+          <div className="bottom"></div>
           <Row>
             <Col lg={4} md={6} sm={12}>
-              <Card>
+              <Card className="projectCard">
                 <Card.Img variant="top" src={projectOne} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
+                  <Card.Title className="serviceName">Card Title</Card.Title>
+                  <Card.Text className="serviceDescription">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
@@ -24,11 +26,11 @@ class RecentProject extends Component {
               </Card>
             </Col>
             <Col lg={4} md={6} sm={12}>
-              <Card>
+              <Card className="projectCard">
                 <Card.Img variant="top" src={projectTwo} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
+                  <Card.Title className="serviceName">Card Title</Card.Title>
+                  <Card.Text className="serviceDescription">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
@@ -37,11 +39,11 @@ class RecentProject extends Component {
               </Card>
             </Col>
             <Col lg={4} md={6} sm={12}>
-              <Card>
+              <Card className="projectCard">
                 <Card.Img variant="top" src={projectThree} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
+                  <Card.Title className="serviceName">Card Title</Card.Title>
+                  <Card.Text className="serviceDescription">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
