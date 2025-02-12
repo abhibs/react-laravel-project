@@ -5,18 +5,21 @@ class Summury extends Component {
   render() {
     return (
       <>
-        <Container fluid={true} className="summaryBanner">
+        <Container fluid={true} className="summaryBanner text-center">
           <Row>
-            <Col lg={8} md={6} sm={12}>
+            <Col lg={8} md={6} sm={12} className="countSection">
               <Row>
                 <Col>
-                  <h1>One</h1>
+                  <h1 className="countNumber">35000</h1>
+                  <h4 className="countTitle">Students Worldwide</h4>
                 </Col>
                 <Col>
-                  <h1>Two</h1>
+                  <h1 className="countNumber">22</h1>
+                  <h4 className="countTitle">Courses Published</h4>
                 </Col>
                 <Col>
-                  <h1>Three</h1>
+                  <h1 className="countNumber">3000</h1>
+                  <h4 className="countTitle">Student Reviews</h4>
                 </Col>
               </Row>
             </Col>
