@@ -2,6 +2,9 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 class Summury extends Component {
   render() {
@@ -12,14 +15,17 @@ class Summury extends Component {
             <Col lg={8} md={6} sm={12} className="countSection">
               <Row>
                 <Col>
+                  <FontAwesomeIcon className="iconProject" icon={faGlobe} />
                   <h1 className="countNumber">35000</h1>
                   <h4 className="countTitle">Students Worldwide</h4>
                 </Col>
                 <Col>
+                  <FontAwesomeIcon className="iconProject" icon={faLaptop} />
                   <h1 className="countNumber">22</h1>
                   <h4 className="countTitle">Courses Published</h4>
                 </Col>
                 <Col>
+                  <FontAwesomeIcon className="iconProject" icon={faStar} />
                   <h1 className="countNumber">3000</h1>
                   <h4 className="countTitle">Student Reviews</h4>
                 </Col>

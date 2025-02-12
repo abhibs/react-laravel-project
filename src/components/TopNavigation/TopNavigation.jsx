@@ -11,7 +11,6 @@ class TopNavigation extends Component {
     this.state = {
       // navBarTitle: "navTitle",
       navBarLogo: [whiteLogo],
-      navBarLogo: [whiteLogo],
       navBarBack: "navBackground",
       navBarItem: "navItem",
     };
@@ -48,7 +47,7 @@ class TopNavigation extends Component {
           className={this.state.navBarBack}
         >
           <Navbar.Brand href="#home">
-            <img src={this.state.navBarLogo} />
+            <img src={this.state.navBarLogo} alt="Company Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
