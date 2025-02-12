@@ -130,3 +130,12 @@
   font-weight: 700;
   font-size: 16px;
 }
+
+.summaryBanner {
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #919191;
+}
