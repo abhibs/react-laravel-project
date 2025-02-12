@@ -9,7 +9,7 @@ class RecentProject extends Component {
     return (
       <>
         <Container className="text-center">
-          <h1 className="serviceMainTitle">MY COURSES</h1>
+          <h1 className="serviceMainTitle">MY Project</h1>
           <div className="bottom"></div>
           <Row>
             <Col lg={4} md={6} sm={12}>
