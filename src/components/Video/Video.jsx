@@ -1,7 +1,18 @@
 import React, { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Modal, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVideoSlash } from "@fortawesome/free-solid-svg-icons";
 
 class Video extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: false,
+    };
+  }
+  modalClose = () => this.setState({ show: false });
+  modalOpen = () => this.setState({ show: true });
+
   render() {
     return (
       <>
@@ -26,11 +37,27 @@ class Video extends Component {
                 learned in the past, you’ve come to the right place.
               </p>
             </Col>
-            <Col lg={6} md={6} sm={12}>
-              <h1>Video</h1>
+            <Col lg={6} md={6} sm={12} className="videoCard">
+              <FontAwesomeIcon
+                onClick={this.modalOpen}
+                className="iconProject"
+                icon={faVideoSlash}
+              />
             </Col>
           </Row>
         </Container>
+
+        <Modal size="lg" show={this.state.show} onHide={this.modalClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.modalClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </>
     );
   }
