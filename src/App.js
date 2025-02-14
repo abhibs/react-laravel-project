@@ -21,6 +21,7 @@ function App() {
       <Courses />
       <Video />
       <ClientReview />
+      <Services />
     </div>
   );
 }
