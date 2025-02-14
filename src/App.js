@@ -7,6 +7,7 @@ import Summury from "./components/Summary/Summury";
 import RecentProject from "./components/RecentProject/RecentProject";
 import Courses from "./components/Courses/Courses";
 import Video from "./components/Video/Video";
+import ClientReview from "./components/ClientReview/ClientReview";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <RecentProject />
       <Courses />
       <Video />
+      <ClientReview />
     </div>
   );
 }
