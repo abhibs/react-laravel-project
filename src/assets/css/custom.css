@@ -336,3 +336,14 @@ a.twitter {
   font-size: 15px;
   font-weight: 400;
 }
+.footerLink {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: #ffd900;
+}
