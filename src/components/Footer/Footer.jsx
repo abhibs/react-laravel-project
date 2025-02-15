@@ -71,6 +71,11 @@ class Footer extends Component {
             </Col>
           </Row>
         </Container>
+        <Container fluid={true} className="text-center copyrightSection">
+          <a className="copyrightlink" href="#">
+            © Copyright 2016 by easy Learning, All Rights Reserved
+          </a>
+        </Container>
       </>
     );
   }

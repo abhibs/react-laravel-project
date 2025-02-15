@@ -8,11 +8,7 @@ class AboutMe extends Component {
     const myElement = document.querySelector("#myElement");
     init(myElement, {
       showCursor: false,
-      strings: [
-        "Laravel Full Stack Web Developer",
-        "Frontend Developer",
-        "Backend Developer",
-      ],
+      strings: ["Web Developer"],
     });
   }
   render() {
