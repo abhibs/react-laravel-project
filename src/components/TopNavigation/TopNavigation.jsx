@@ -13,6 +13,7 @@ class TopNavigation extends Component {
       navBarLogo: [whiteLogo],
       navBarBack: "navBackground",
       navBarItem: "navItem",
+      navVariant: "dark",
     };
   }
   onScroll = () => {
@@ -22,6 +23,7 @@ class TopNavigation extends Component {
         navBarLogo: [blackLogo],
         navBarBack: "navBackgroundScroll",
         navBarItem: "navItemScroll",
+        navVariant: "light",
       });
     } else if (window.scrollY < 100) {
       // this.setState({ navBarTitle: "navTitle" });
@@ -29,6 +31,7 @@ class TopNavigation extends Component {
         navBarLogo: [whiteLogo],
         navBarBack: "navBackground",
         navBarItem: "navItem",
+        navVariant: "dark",
       });
     }
   };
@@ -43,7 +46,7 @@ class TopNavigation extends Component {
           fixed="top"
           expand="lg"
           // bg="dark"
-          // variant="dark"
+          variant={this.state.navVariant}
           className={this.state.navBarBack}
         >
           <Navbar.Brand href="#home">

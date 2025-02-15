@@ -14,7 +14,7 @@ class Footer extends Component {
         <Container fluid={true} className="footerSection">
           <Row>
             <Col lg={3} md={6} sm={12} className="p-5 text-center">
-              <h2 className="footerName text-center">Follow Us </h2>
+              <h2 className="footerName">Follow Us </h2>
               <div className="social-container">
                 <a href="#" className="facebook social">
                   <FontAwesomeIcon icon={faFacebook} size="2x" />
@@ -29,7 +29,7 @@ class Footer extends Component {
             </Col>
 
             <Col lg={3} md={6} sm={12} className="p-5 text-justify">
-              <h2 className="footerName text-center">Address </h2>
+              <h2 className="footerName">Address </h2>
               <p className="footerDescription">
                 Javalli Tudoor Thirthahalli Shimoga Karnataka 577226
                 <br></br>
@@ -40,7 +40,7 @@ class Footer extends Component {
               </p>
             </Col>
             <Col lg={3} md={6} sm={12} className="p-5 text-justify">
-              <h2 className="footerName text-center">Information </h2>
+              <h2 className="footerName">Information </h2>
               <a className="footerLink" href="#">
                 About Me
               </a>
@@ -55,7 +55,7 @@ class Footer extends Component {
               <br></br>
             </Col>
             <Col lg={3} md={6} sm={12} className="p-5 text-justify">
-              <h2 className="footerName text-center">Policy </h2>
+              <h2 className="footerName">Policy </h2>
               <a className="footerLink" href="#">
                 Fefund Policy
               </a>
