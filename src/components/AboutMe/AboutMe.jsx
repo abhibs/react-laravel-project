@@ -1,8 +1,20 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import face from "../../assets/images/face.png";
+import { init } from "ityped";
 
 class AboutMe extends Component {
+  componentDidMount() {
+    const myElement = document.querySelector("#myElement");
+    init(myElement, {
+      showCursor: false,
+      strings: [
+        "Laravel Full Stack Web Developer",
+        "Frontend Developer",
+        "Backend Developer",
+      ],
+    });
+  }
   render() {
     return (
       <>
@@ -20,7 +32,7 @@ class AboutMe extends Component {
                 <h2 className="aboutMeDetails">HI There, I'm</h2>
                 <h2 className="aboutMeTitle">Abhiram</h2>
                 <h3 className="aboutMeDetails">
-                  Work as <span id="myElement"> Full Stack Web Developer </span>
+                  Work as <span id="myElement"></span>
                 </h3>
               </div>
             </Col>
