@@ -1,10 +1,14 @@
 import React from "react";
-import Aboutpage from "./pages/Aboutpage";
+import TopNavigation from "./components/TopNavigation/TopNavigation";
+import AllCourses from "./components/AllCourses/AllCourses";
+import PageTop from "./components/PageTop/PageTop";
 
 function App() {
   return (
     <div>
-      <Aboutpage />
+      <TopNavigation />
+      <PageTop />
+      <AllCourses />
     </div>
   );
 }
