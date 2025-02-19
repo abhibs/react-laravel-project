@@ -1,5 +1,4 @@
 .topFixedBanner {
-  /* background-image: url("../images/banner.jpg"); */
   min-height: 550px;
   background-attachment: fixed;
   background-position: center;
@@ -8,13 +7,6 @@
   width: 100%;
   background: #000000;
 }
-/* 
-.topBannerOverlay{
-     position: absolute;
-     min-height: 550px;
-     width: 1900px;
-     background: #000000;
-} */
 
 .topContent {
   margin-top: 10em !important;
@@ -361,4 +353,25 @@ a.twitter {
 .copyrightlink:hover {
   text-decoration: none;
   color: #ffffff;
+}
+
+.topFixedPage {
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background: #000000;
+}
+
+.topContentPage {
+  margin-top: 15em !important;
+}
+
+.topTitlePage {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 48px;
 }

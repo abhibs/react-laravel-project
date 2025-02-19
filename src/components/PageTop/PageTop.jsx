@@ -1,10 +1,17 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 class PageTop extends Component {
   render() {
     return (
       <>
-        <h1>Page Top Component</h1>
+        <Container fluid={true} className="topFixedPage">
+          <Row>
+            <Col className="text-center topContentPage">
+              <h1 className="topTitlePage">About Us</h1>
+            </Col>
+          </Row>
+        </Container>
       </>
     );
   }
