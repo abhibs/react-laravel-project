@@ -1,16 +1,18 @@
 import React from "react";
-import ContactSec from "./components/ContactSec/ContactSec";
-import PageTop from "./components/PageTop/PageTop";
-import TopNavigation from "./components/TopNavigation/TopNavigation";
-import Footer from "./components/Footer/Footer";
+import Contactpage from "./pages/Contactpage";
+// import ContactSec from "./components/ContactSec/ContactSec";
+// import PageTop from "./components/PageTop/PageTop";
+// import TopNavigation from "./components/TopNavigation/TopNavigation";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div>
-      <TopNavigation />
+      {/* <TopNavigation />
       <PageTop pagetitle="Contact Us" />
       <ContactSec />
-      <Footer />
+      <Footer /> */}
+      <Contactpage />
     </div>
   );
 }
