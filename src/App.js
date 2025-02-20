@@ -1,10 +1,10 @@
 import React from "react";
-import Services from "./pages/Services";
+import ContactSec from "./components/ContactSec/ContactSec";
 
 function App() {
   return (
     <div>
-      <Services />
+      <ContactSec />
     </div>
   );
 }
