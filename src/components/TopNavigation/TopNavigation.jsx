@@ -7,7 +7,7 @@ import "../../assets/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 
 class TopNavigation extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       // navBarTitle: "navTitle",
@@ -15,6 +15,7 @@ class TopNavigation extends Component {
       navBarBack: "navBackground",
       navBarItem: "navItem",
       navVariant: "dark",
+      pageTitle: props.title,
     };
   }
   onScroll = () => {
@@ -42,6 +43,7 @@ class TopNavigation extends Component {
   render() {
     return (
       <>
+        <title>{this.state.pageTitle}</title>
         <Navbar
           collapseOnSelect
           fixed="top"
@@ -60,32 +62,62 @@ class TopNavigation extends Component {
             <Nav className="mr-auto"></Nav>
             <Nav>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/"
+                >
                   HOME
                 </NavLink>
               </Nav.Link>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/about">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/about"
+                >
                   ABOUT
                 </NavLink>
               </Nav.Link>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/service">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/service"
+                >
                   SERVICE
                 </NavLink>
               </Nav.Link>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/course">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/course"
+                >
                   COURSES
                 </NavLink>
               </Nav.Link>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/porfolio">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/porfolio"
+                >
                   PORTFOLIO
                 </NavLink>
               </Nav.Link>
               <Nav.Link className={this.state.navBarItem}>
-                <NavLink className={this.state.navBarItem} to="/contact">
+                <NavLink
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/contact"
+                >
                   CONTACT US
                 </NavLink>
               </Nav.Link>

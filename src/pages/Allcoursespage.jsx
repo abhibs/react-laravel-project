@@ -8,7 +8,7 @@ class Allcoursespage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Abhiram / Course Page" />
         <PageTop pagetitle="All Courses" />
         <AllCourses />
         <Footer />

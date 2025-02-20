@@ -9,7 +9,7 @@ class Aboutpage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Abhiram / About Page" />
         <PageTop pagetitle="About Us" />
         <AboutMe />
         <AboutDescription />

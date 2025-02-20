@@ -8,7 +8,7 @@ class Services extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Abhiram / Service Page"/>
         <PageTop pagetitle="All Services" />
         <Service />
         <Footer />

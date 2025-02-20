@@ -15,7 +15,7 @@ export class Homepage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Abhiram / Home Page" />
         <TopBanner />
         <Services />
         <Analysis />

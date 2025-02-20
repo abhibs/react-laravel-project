@@ -8,7 +8,7 @@ class Allprojectpage extends Component {
   render() {
     return (
       <>
-        <TopNavigation />
+        <TopNavigation title="Abhiram / Project Page"/>
         <PageTop pagetitle="All Project" />
         <AllProjects />
         <Footer />
