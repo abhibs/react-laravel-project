@@ -1,12 +1,14 @@
 import React from "react";
-import Contactpage from "./pages/Contactpage";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./routes/AppRouter";
 
 function App() {
   return (
-    <div>
-
-      <Contactpage />
-    </div>
+    <>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
+    </>
   );
 }
 
