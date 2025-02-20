@@ -1,10 +1,17 @@
 import React, { Component } from "react";
+import TopNavigation from "../components/TopNavigation/TopNavigation";
+import PageTop from "../components/PageTop/PageTop";
+import Service from "../components/Services/Services";
+import Footer from "../components/Footer/Footer";
 
-export class Services extends Component {
+class Services extends Component {
   render() {
     return (
       <>
-        <h1>Service Page</h1>
+        <TopNavigation />
+        <PageTop pagetitle="All Services" />
+        <Service />
+        <Footer />
       </>
     );
   }
