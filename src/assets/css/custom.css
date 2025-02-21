@@ -384,3 +384,23 @@ a.twitter {
   color: #ffffff !important;
   text-decoration: none !important;
 }
+
+.about-thumb-wrap.after-shape {
+  margin-right: 30px;
+}
+
+.project-details {
+  margin-left: 35px;
+}
+.projectDetailsText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #051b35;
+  font-size: 40px;
+}
+.detailsName {
+  color: #051b35;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
