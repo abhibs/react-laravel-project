@@ -64,9 +64,13 @@ class Footer extends Component {
                 Refund Policy
               </Link>
               <br></br>
-              <a className="footerLink" href="#">
+              {/* <a className="footerLink" href="#">
                 Terms And Codition
-              </a>
+              </a> */}
+              <Link className="footerLink" to="/terms/condition">
+                Terms And Codition
+              </Link>
+
               <br></br>
               <a className="footerLink" href="#">
                 Privacy Policy
