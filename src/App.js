@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./routes/AppRouter";
+import TermsCondition from "./components/TermsCondition/TermsCondition";
+// import { BrowserRouter } from "react-router-dom";
+// import AppRouter from "./routes/AppRouter";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <AppRouter />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <TermsCondition />
     </>
   );
 }
