@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "../../assets/css/custom.css";
-import "../../assets/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
 class TermsCondition extends Component {
   render() {
