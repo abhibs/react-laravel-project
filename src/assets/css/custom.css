@@ -375,3 +375,12 @@ a.twitter {
   color: #ffffff;
   font-size: 48px;
 }
+
+.link-style {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.link-style:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
