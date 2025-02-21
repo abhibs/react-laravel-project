@@ -72,9 +72,13 @@ class Footer extends Component {
               </Link>
 
               <br></br>
-              <a className="footerLink" href="#">
+              {/* <a className="footerLink" href="#">
                 Privacy Policy
-              </a>
+              </a> */}
+              <Link className="footerLink" to="/privacy/policy">
+                Privacy Policy
+              </Link>
+
               <br></br>
             </Col>
           </Row>
