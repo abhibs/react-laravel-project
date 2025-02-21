@@ -12,7 +12,7 @@ class ProjectDetail extends Component {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div className="about-thumb-wrap after-shape">
-                <img src={projectDetails} />
+                <img src={projectDetails} style={{ width: "100%" }} />
               </div>
             </Col>
 
