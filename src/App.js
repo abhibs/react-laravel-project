@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./routes/AppRouter";
+import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
+// import { BrowserRouter } from "react-router-dom";
+// import AppRouter from "./routes/AppRouter";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <AppRouter />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <ProjectDetail />
     </>
   );
 }
