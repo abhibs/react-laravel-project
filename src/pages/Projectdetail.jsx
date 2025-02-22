@@ -5,6 +5,9 @@ import ProjectDetail from "../components/ProjectDetail/ProjectDetail";
 import Footer from "../components/Footer/Footer";
 
 class Projectdetail extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>

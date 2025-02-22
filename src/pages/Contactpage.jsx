@@ -5,6 +5,9 @@ import TopNavigation from "../components/TopNavigation/TopNavigation";
 import Footer from "../components/Footer/Footer";
 
 class Contactpage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>

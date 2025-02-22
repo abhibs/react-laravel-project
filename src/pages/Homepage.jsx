@@ -12,6 +12,9 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Footer from "../components/Footer/Footer";
 
 export class Homepage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>

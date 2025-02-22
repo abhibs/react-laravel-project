@@ -5,10 +5,13 @@ import AllProjects from "../components/AllProjects/AllProjects";
 import Footer from "../components/Footer/Footer";
 
 class Allprojectpage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>
-        <TopNavigation title="Abhiram / Project Page"/>
+        <TopNavigation title="Abhiram / Project Page" />
         <PageTop pagetitle="All Project" />
         <AllProjects />
         <Footer />

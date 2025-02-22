@@ -5,10 +5,13 @@ import Service from "../components/Services/Services";
 import Footer from "../components/Footer/Footer";
 
 class Services extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>
-        <TopNavigation title="Abhiram / Service Page"/>
+        <TopNavigation title="Abhiram / Service Page" />
         <PageTop pagetitle="All Services" />
         <Service />
         <Footer />

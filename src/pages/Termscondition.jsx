@@ -5,6 +5,9 @@ import TermsCondition from "../components/TermsCondition/TermsCondition";
 import Footer from "../components/Footer/Footer";
 
 class Termscondition extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <>
