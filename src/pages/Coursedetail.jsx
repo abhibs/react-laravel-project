@@ -9,7 +9,7 @@ class Coursedetail extends Component {
     return (
       <>
         <TopNavigation title="Abhiram / Course Detail" />
-        <PageTop page="Course Detail" />
+        <PageTop pagetitle="Course Detail" />
         <CourseDetail />
         <Footer />
       </>
