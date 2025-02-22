@@ -4,6 +4,7 @@ import course1 from "../../assets/images/course1.avif";
 import course2 from "../../assets/images/course2.avif";
 import course3 from "../../assets/images/course3.avif";
 import course4 from "../../assets/images/course4.avif";
+import { Link } from "react-router-dom";
 
 export class Courses extends Component {
   render() {
@@ -24,9 +25,16 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+
+                  {/* <a className="courseViewMore float-left" href="#">
                     View Details
-                  </a>
+                  </a> */}
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
+                    View Details
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -41,9 +49,15 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  {/* <a className="courseViewMore float-left" href="#">
                     View Details
-                  </a>
+                  </a> */}
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
+                    View Details
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -60,9 +74,15 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  {/* <a className="courseViewMore float-left" href="#">
                     View Details
-                  </a>
+                  </a> */}
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
+                    View Details
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -77,9 +97,16 @@ export class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+
+                  {/* <a className="courseViewMore float-left" href="#">
                     View Details
-                  </a>
+                  </a> */}
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
+                    View Details
+                  </Link>
                 </Col>
               </Row>
             </Col>

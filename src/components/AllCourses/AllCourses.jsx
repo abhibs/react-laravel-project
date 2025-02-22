@@ -4,6 +4,7 @@ import course1 from "../../assets/images/course1.avif";
 import course2 from "../../assets/images/course2.avif";
 import course3 from "../../assets/images/course3.avif";
 import course4 from "../../assets/images/course4.avif";
+import { Link } from "react-router-dom";
 
 class AllCourses extends Component {
   render() {
@@ -16,7 +17,7 @@ class AllCourses extends Component {
             <Col lg={6} md={12} sm={12}>
               <Row>
                 <Col lg={6} md={6} sm={12}>
-                  <img className="courseImg" src={course1} />
+                  <img className="courseImg" src={course1} alt="" />
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <h5 className="text-justify serviceName">Laravel 8 </h5>
@@ -24,16 +25,22 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  {/* <a className="courseViewMore float-left" href="#">
                     View Details
-                  </a>
+                  </a> */}
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
+                    View Details
+                  </Link>
                 </Col>
               </Row>
             </Col>
             <Col lg={6} md={12} sm={12}>
               <Row>
                 <Col lg={6} md={6} sm={12}>
-                  <img className="courseImg" src={course2} />
+                  <img className="courseImg" src={course2} alt="" />
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <h5 className="text-justify serviceName">Laravel 8 </h5>
@@ -41,9 +48,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -52,7 +62,7 @@ class AllCourses extends Component {
             <Col lg={6} md={12} sm={12}>
               <Row>
                 <Col lg={6} md={6} sm={12}>
-                  <img className="courseImg" src={course3} />
+                  <img className="courseImg" src={course3} alt="" />
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <h5 className="text-justify serviceName">Laravel 8 </h5>
@@ -60,16 +70,19 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
             <Col lg={6} md={12} sm={12}>
               <Row>
                 <Col lg={6} md={6} sm={12}>
-                  <img className="courseImg" src={course4} />
+                  <img className="courseImg" src={course4} alt="" />
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <h5 className="text-justify serviceName">Laravel 8 </h5>
@@ -77,9 +90,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/course/detail"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
