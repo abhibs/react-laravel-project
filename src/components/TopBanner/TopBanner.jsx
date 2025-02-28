@@ -1,7 +1,20 @@
+import axios from "axios";
 import React, { Component } from "react";
 import { Container, Row, Button, Col } from "react-bootstrap";
 
 class TopBanner extends Component {
+  componentDidMount() {
+    axios
+      .get("https://atticasheets.com/api/top/section/data")
+      .then(function (response) {
+        // handle success
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }
   render() {
     return (
       <>
